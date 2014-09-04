@@ -15,21 +15,9 @@ a:hover {
 	color: #6599FF;
 }
 
-header, nav, footer, main {
-	margin: 0 auto;
-	width: 70%;
-}
-
 .title, .subtitle {
 	color: #6599FF;
-	
 
-}
-
-.title {
-	width: 50%;
-	font-size: 3em;
-	margin: 0;
 }
 
 .subtitle {
@@ -38,58 +26,105 @@ header, nav, footer, main {
 
 /* ----- Wrappers ----- */
 #hwrapper, #fwrapper {
- 	background: #eee;
- 	padding: 10px 0px 10px 0px;
+ 	background: #000;
+	padding: 10px 0px 10px 0px;
 }
 
 #cwrapper {
 	background: #fff;
 }
 
-/* Header */
-header {
+@media (min-width: 500px) {
+	header, nav, footer, main {
+		margin: 0 auto;
+		width: 70%;
+	}
+
+	/* Header */
+	.title {
+		width: 50%;
+		font-size: 3em;
+		margin: 0;
+	}
+
+	/* ----- Navigation ----- */
+	#main-nav {
+		text-decoration: none;
+		font-size: 2em;
+		padding-right: 10px;
+	}
+
+	#social-nav {
+		width: 425px;
+		float: right;
+	}
+
+	#social-nav img {
+		width: 30px;
+		height: 30px;
+		margin-left: 10px;
+	}
+
+	#foot-nav {
+		text-decoration: none;
+		padding-right: 30px;
+	}
+
+	/* ----- Main Content ----- */
+	main {
+		min-height: 600px;
+	}
+
+	/* ----- Footer ----- */
+	footer {
+		text-align: center;
+		font-size: .8em;
+	}
+
+	footer span {
+		color: #fff;
+	}
+}
+
+@media (max-width: 500px){
+	#hwrapper, #cwrapper {
+		width: 100%;
+	}	
 	
-}
-
-/* ----- Navigation ----- */
-#main-nav {
-	text-decoration: none;
-	font-size: 2em;
-	padding-right: 10px;
-}
-
-#social-nav {
-	width: 425px;
-	float: right;
-}
-
-#social-nav img {
-	width: 30px;
-	height: 30px;
-	margin-left: 10px;
-}
-
-#foot-nav {
-	text-decoration: none;
-	padding-right: 30px;
-}
-
-/* ----- Main Content ----- */
-main {
-	min-height: 600px;
-}
-
-/* ----- Footer ----- */
-footer {
-	text-align: center;
-	font-size: .8em;
-}
-
-footer span {
-	color: #fff;
-}
-
-/* ----- CSS Media Queries ----- */
-@media (max-width: 500){
+	#cwrapper {
+		padding: 0px 5px 0px 5px;	
+	}
+	
+	footer, #fwrapper {
+		display: none;
+	}
+	
+	.title {
+		font-size: 2em;
+		margin: 0;
+	}
+	
+	#main-nav {
+		font-size: 1em;
+	}
+	
+	#social-nav {
+		z-index: 1;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #000;
+		}
+	
+	#social-nav a {
+		margin: 0 auto;
+	}
+	
+	#social-nav img {
+		height: 50px;
+		width: 50px;
+	}
+	
+	
 	
 }

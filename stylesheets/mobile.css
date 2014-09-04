@@ -1,0 +1,42 @@
+@media (max-width: 500px){
+	#hwrapper, #cwrapper {
+		width: 100%;
+	}	
+	
+	#cwrapper {
+		padding: 0px 5px 0px 5px;	
+	}
+	
+	footer, #fwrapper {
+		display: none;
+	}
+	
+	.title {
+		font-size: 2em;
+		margin: 0;
+	}
+	
+	#main-nav {
+		font-size: 1em;
+	}
+	
+	#social-nav {
+		z-index: 1;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #000;
+		}
+	
+	#social-nav a {
+		margin: 0 auto;
+	}
+	
+	#social-nav img {
+		height: 50px;
+		width: 50px;
+	}
+	
+	
+	
+}
